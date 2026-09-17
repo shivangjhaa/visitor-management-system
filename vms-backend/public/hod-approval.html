@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HOD Approval · Alok Industries VMS</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <script src="/js/theme.js"></script>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount"></div>
+      <div class="page-body">
+        <div class="card">
+          <div class="card-header">
+            <h2>Requests Awaiting Approval</h2>
+            <button class="link-btn" id="ha-refresh">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr><th>Inward No.</th><th>Visitor</th><th>Representing</th><th>Department</th><th>Person to Meet</th><th>Requested By</th><th>Appointment</th><th></th></tr>
+              </thead>
+              <tbody id="ha-body"><tr class="empty-row"><td colspan="8">Loading…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="ha-modal">
+    <div class="modal">
+      <div class="card-header"><h2>Review Request</h2><button class="link-btn" id="ha-close-modal">Close ✕</button></div>
+      <div class="card-body" id="ha-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/hod-approval.js"></script>
+</body>
+</html>

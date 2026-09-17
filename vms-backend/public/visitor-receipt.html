@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visitor Receipt · Alok Industries VMS</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <script src="/js/theme.js"></script>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount"></div>
+      <div class="page-body">
+        <div class="card">
+          <div class="card-header">
+            <h2>Visitor Receipts (Gate Passes)</h2>
+            <input type="text" id="vr-search" placeholder="Search name, mobile, inward/receipt no." style="width:260px;" />
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr><th>Receipt No.</th><th>Inward No.</th><th>Visitor</th><th>Category</th><th>Meeting</th><th>Issued By</th><th>Issued On</th><th></th></tr>
+              </thead>
+              <tbody id="vr-body"><tr class="empty-row"><td colspan="8">Loading…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/visitor-receipt.js"></script>
+</body>
+</html>

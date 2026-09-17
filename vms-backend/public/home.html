@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home · Alok Industries VMS</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <script src="/js/theme.js"></script>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount"></div>
+      <div class="page-body">
+        <div class="stat-row" id="stat-row">
+          <div class="stat-tile"><div class="num">—</div><div class="label">Total</div></div>
+          <div class="stat-tile"><div class="num">—</div><div class="label">Total Leaves</div></div>
+          <div class="stat-tile"><div class="num">—</div><div class="label">Total Inside Premises</div></div>
+          <div class="stat-tile"><div class="num">—</div><div class="label">Today</div></div>
+          <div class="stat-tile"><div class="num">—</div><div class="label">Today Leave</div></div>
+          <div class="stat-tile"><div class="num">—</div><div class="label">Today Inside Premises</div></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h2>Recent Activity</h2><button class="link-btn" id="refresh-btn">Refresh</button></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Inward No.</th><th>Visitor</th><th>Category</th><th>Meeting</th><th>Appointment</th><th>Status</th></tr></thead>
+              <tbody id="recent-body"><tr class="empty-row"><td colspan="6">Loading…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign In · Alok Industries VMS</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <script src="/js/theme.js"></script>
+  <div class="login-shell">
+    <div class="login-visual">
+      <div class="glyph">Alok Industries Limited</div>
+      <div class="hazard-stripe" style="position:absolute;top:0;left:0;"></div>
+      <h1>Visitor Management System</h1>
+      <p>Track appointments, verify arrivals at the gate, and issue gate passes — all from one place.</p>
+    </div>
+    <div class="login-panel">
+      <div class="login-card">
+        <div class="card">
+          <div class="card-body">
+            <div class="eyebrow">Welcome back</div>
+            <h2>Sign in to your account</h2>
+            <div class="error-banner" id="login-error"></div>
+            <form id="login-form">
+              <div class="field">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="you@alokind.com" required autocomplete="username" />
+              </div>
+              <div class="field">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" id="login-btn">Sign In</button>
+            </form>
+            <div class="demo-creds">
+              <b>Demo accounts</b> (after running <span class="mono">npm run seed</span>):<br/>
+              Admin: admin@alokind.com / Admin@123<br/>
+              User: user@alokind.com / User@123<br/>
+              Security: security@alokind.com / Security@123
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Delegate Updation · Alok Industries VMS</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <script src="/js/theme.js"></script>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount"></div>
+      <div class="page-body">
+        <div class="card">
+          <div class="card-header"><h2>Delegate Updation</h2></div>
+          <div class="card-body">
+            <p class="small text-muted">
+              A Delegate stands in for the HOD on <b>HOD Approval</b> requests when the HOD is unavailable.
+              An admin can set this for any department; a HOD can only set it for the department they head.
+            </p>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr><th>Seq</th><th>Department</th><th>HOD</th><th>Current Delegate</th><th></th></tr>
+              </thead>
+              <tbody id="du-body"><tr class="empty-row"><td colspan="5">Loading…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="du-modal">
+    <div class="modal">
+      <div class="card-header"><h2 id="du-modal-title">Set Delegate</h2><button class="link-btn" id="du-close-modal">Close ✕</button></div>
+      <div class="card-body">
+        <div class="field">
+          <label for="du-select">Delegate</label>
+          <select id="du-select"><option value="">None</option></select>
+          <p class="small text-muted mt-8" id="du-empty-note" style="display:none;">
+            No other active users are linked to this department yet — add them via Master &gt; User Master first.
+          </p>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="du-clear-btn">Clear Delegate</button>
+          <button type="button" class="btn btn-primary" id="du-save-btn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/delegate-updation.js"></script>
+</body>
+</html>
