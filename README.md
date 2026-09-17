@@ -1,4 +1,4 @@
-# Visitor Management System — Alok Industries (VMS)
+# Visitor Management System 
 
 A Node.js + Express + MongoDB backend for managing visitor appointments end-to-end — request, HOD approval, gate check-in/out, and gate pass generation — with a vanilla HTML/CSS/JS frontend (no build step).
 
